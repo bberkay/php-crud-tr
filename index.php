@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- =======================================ÖĞRENCİ EKLEME FORMU============================================ -->
     <h2>Öğrenci Ekle</h2>
     <!-- POST -> İnputlara girilen bilgileri URL de gözükmeyecek şekilde backend.php ye gönderir. Daha güvenlidir -->
     <form action="backend.php" method="POST">
@@ -31,6 +32,8 @@
         <input type="submit" value="Ekle" name="ogrenci_ekle"> <!-- Kullanıcı butona tıkladığında kullanıcının girdiği tüm verileri(name ile verileri çekiyor) backend.php ye gönder. -->
     </form>
     <hr style = "margin-top:20px;">
+    
+    <!-- =======================================ÖĞRENCİ LİSTE TABLOSU============================================ -->
     <h2>Öğrenci Listesi</h2>
     <table border  = "1" style = "border-collapse:collapse;">
         <thead>
@@ -70,6 +73,8 @@
         </tbody>
     </table>
     <hr style = "margin-top:20px;">
+    
+    <!-- =======================================ÖĞRENCİ GÜNCELLEME FORMU============================================ -->
     <?php
     if(isset($_GET['ogrenci_degistir'])){ /* Eğer URL ye ogrenci_degistir kısmı geldi ise ogrenci_duzenle forumu göster */
         /* Öğrenci Bul, sinif tablosundan URL den gelen id(Kimlik) e göre öğrenciyi bul*/
@@ -95,6 +100,8 @@
         </form>
     <?php }
     ?>
+    
+     <!-- =======================================İŞLEM SONUCU============================================ -->
     <?php
     if (isset($_GET['islem'])) { /* Eğer URL ye islem adında bir parametre geldi ise */
         if ($_GET['islem'] == "success") { /* Eğer islem parametresi 'success' e eşise 'İşlem başarılı' yazdır*/
@@ -105,6 +112,7 @@
         }
     }
     ?>
+     <!-- =============================================================================================== -->
 </body>
 
 </html>
