@@ -3,6 +3,7 @@
 // baglanti.php sayfası ile iletişim sağlama.
 require_once 'baglanti.php';
 
+// =======================================ÖĞRENCİ EKLEME İŞLEMİ============================================ //
 // Öğrenci Ekle, Eğer POST ile ogrenci_ekle geldi ise
 if(isset($_POST['ogrenci_ekle'])){
     $ortalama = ($_POST['not1'] + $_POST['not2'] + $_POST['not3'])/3; // Form dan POST methodu ile gelen not bilgilerinin ortalamasını hesaplama.
@@ -42,6 +43,7 @@ if(isset($_POST['ogrenci_ekle'])){
     }
 }
 
+// =======================================ÖĞRENCİ SİLME İŞLEMİ============================================ //
 // Öğrenci Sil, eğer URL ye sil paramteresi geldi ise
 if(isset($_GET['sil'])){
     /* sinif tablosundan url den gelen sil parametresinin eşit olduğu id yi sil */
@@ -61,6 +63,7 @@ if(isset($_GET['sil'])){
     }
 }
 
+// =======================================ÖĞRENCİ GÜNCELLEME İŞLEMİ============================================ //
 // Öğrenci Güncelle, eğer URL ye güncelle parametresi geldi ise
 if(isset($_POST['ogrenci_guncelle'])){
     $ortalama = ($_POST['not1'] + $_POST['not2'] + $_POST['not3'])/3; // Form dan POST methodu ile gelen not bilgilerinin ortalamasını hesaplama.
