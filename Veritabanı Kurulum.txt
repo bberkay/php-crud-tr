@@ -1,0 +1,4 @@
+1- phpMyAdmin de ders adında bir veritabanı açılır.
+2- Veritabanı açıldıktan sonra tablo ekleme kısmı açılır.
+3- Tablo ekleme yapmadan yukarıdaki sekmelerden İçe Aktar sekmesine gidilir.
+4- Dosya Seç butonuna tıklanarak sinif.sql dosyası seçilir.
