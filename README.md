@@ -1,2 +1,5 @@
-"# php_crud" 
-https://s5.dosya.tc/server/2wming/crud_islemler.rar.html - Dosya İndirme Bağlantısı
+<h3>Çalışma Sırası</h3>
+<ol>
+  <li>baglanti.php</li>
+  <li>index.php & backend.php</li>
+</ol>
